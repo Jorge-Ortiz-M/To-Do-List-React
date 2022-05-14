@@ -1,3 +1,4 @@
+import DeleteIcon from '@mui/icons-material/Delete';
 
 function Note(props){
 
@@ -12,7 +13,7 @@ function Note(props){
                 <button type="submit" onClick={() => {
                     props.deleteNote(props.id);
                     }}>
-                        Delete.</button>
+                        <DeleteIcon fontSize="small" /></button>
             </div>
             <div>
                 <p className="description">

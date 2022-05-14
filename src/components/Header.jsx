@@ -1,10 +1,17 @@
 
+import PlaylistAddCheckCircleIcon from '@mui/icons-material/PlaylistAddCheckCircle';
+
 function Header(){
     return(
         <header>
             <nav>
                 <div>
-                    To Do List.
+                    <div>
+                        <PlaylistAddCheckCircleIcon />
+                    </div>
+                    <div>
+                        To Do List.
+                    </div>
                 </div>
                 <ul>
                     <li>Home</li>

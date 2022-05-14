@@ -1,4 +1,6 @@
 import {useState} from 'react';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import Zoom from '@mui/material/Zoom';
 
 function Form(props){
 
@@ -21,13 +23,25 @@ function Form(props){
         setNote({title: '', description:''})
     }
 
+    const [status, setStatus] = useState(false)
+
+    function appearForm(){
+        setStatus(true);
+    }
+
     return (
         <div className='form-user'>
             <h2>Do you need to add something to your list?</h2>
-            <form>  
-                <input placeholder='Ruby on Rails' name='title' type="text" onChange={updateNote} value={title} />
-                <button type='submit' onClick={submitButton} >Add</button> <br /> 
-                <textarea placeholder='Some description...' name='description' type="text" onChange={updateNote} value={description} />
+            <form>
+                <Zoom in={status}>
+                    <div>
+                        <input placeholder='Ruby on Rails' name='title' type="text" onChange={updateNote} value={title} />
+                        <button type='submit' onClick={submitButton} >
+                            <AddCircleIcon fontSize="small" className="add-icon" />
+                        </button> <br /> 
+                    </div>
+                </Zoom>
+                <textarea onClick={appearForm} placeholder='Some description...' name='description' type="text" onChange={updateNote} value={description} rows={status ? 5 : 1}/>
             </form>
         </div>
     );
