@@ -8,7 +8,7 @@ function List(props){
     }        
     
     return (
-        <div className="list-section">
+        <div className="list-user">
             {
                 props.notes.map((note, index) => {
                     return (

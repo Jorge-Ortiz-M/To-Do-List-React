@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -22,17 +23,13 @@ nav{
 }
 
 nav div{
-  margin: auto auto auto 20px;
+  margin: auto auto auto 10px;
   font-size: 1.4rem;
-}
-
-nav ul{
-  display: flex;
 }
 
 nav ul li{
   display: inline-flex;
-  margin: auto 20px auto auto;
+  margin: auto 10px auto auto;
 }
 
 footer{
@@ -49,4 +46,55 @@ footer p{
 
 section{
   padding: 10px;
+}
+
+h2{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form-user{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-user div{
+  margin: auto auto auto auto;
+}
+
+.form-user div input, .form-user div button, .form-user div textarea, .note-user button{
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 0px 0px 5px 3px #dbdbdb;
+}
+.form-user div button{
+  border: none;
+  background-color: #003b3f;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.form-user div textarea{
+  height: 100px;
+}
+
+.list-user{
+  text-align: center;
+}
+
+.note-user{
+  padding: 15px;
+  display: inline-flex;
+  box-shadow: 0px 0px 5px 3px #c5c5c5;
+  border: none;
+  border-radius: 20px;
+}
+
+.note-user button{
+  border: none;
+  background-color: #3f0000;
+  color: #ffffff;
+  font-weight: 500;
 }

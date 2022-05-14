@@ -4,7 +4,7 @@ function Note(props){
     const { title, description } = props.note;
 
     return(
-        <div>
+        <div className="note-user">
             <p>
                 <strong>Title:</strong> {title} <br />
                 <strong>Description:</strong> {description}
