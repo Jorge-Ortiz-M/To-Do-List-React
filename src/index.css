@@ -71,7 +71,7 @@ h2{
 }
 .form-user div button{
   border: none;
-  background-color: #003b3f;
+  background-color: #0a7301;
   color: #ffffff;
   font-weight: 500;
 }
@@ -81,20 +81,38 @@ h2{
 }
 
 .list-user{
-  text-align: center;
+  margin-top: 20px;
 }
 
 .note-user{
+  margin: 10px;
+  width: 220px;
   padding: 15px;
   display: inline-flex;
+  flex-direction: column;
   box-shadow: 0px 0px 5px 3px #c5c5c5;
   border: none;
   border-radius: 20px;
 }
 
+.note-user .note-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-user .title{
+  font-size: 0.9rem;
+  display: inline-flex;
+}
+
+.note-user .description{
+  font-size: 0.8rem;
+}
+
 .note-user button{
+  display: inline-flex;
   border: none;
-  background-color: #3f0000;
+  background-color: #7d0303;
   color: #ffffff;
   font-weight: 500;
 }

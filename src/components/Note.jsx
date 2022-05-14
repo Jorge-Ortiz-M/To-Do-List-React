@@ -5,15 +5,19 @@ function Note(props){
 
     return(
         <div className="note-user">
-            <p>
-                <strong>Title:</strong> {title} <br />
-                <strong>Description:</strong> {description}
-            </p>
-            <div>
+            <div className="note-header">
+                <p className="title">
+                    <strong>Title:</strong> {title} <br />
+                </p>
                 <button type="submit" onClick={() => {
                     props.deleteNote(props.id);
                     }}>
                         Delete.</button>
+            </div>
+            <div>
+                <p className="description">
+                    <strong>Description:</strong> {description}
+                </p>
             </div>
         </div>
             
